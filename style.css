@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@100&family=Cairo&family=Dancing+Script&family=Exo+2&family=Fraunces:opsz,wght@9..144,700&family=Gemunu+Libre:wght@200&family=Glory:wght@200&family=Montserrat:ital,wght@0,200;0,400;0,700;1,100&family=PT+Serif:ital,wght@0,400;0,700;1,700&family=Poppins:wght@300;400&family=Roboto+Mono:wght@100;300&family=Rubik&family=Ruwudu&family=Space+Mono&family=Victor+Mono:wght@100;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    background-color: #E3E3E3;
+    color: #080808;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+input{
+    border: none;
+    background-color: #E3E3E3;
+}
+input::placeholder{
+    font-size: large;
+}
+#add-button{
+    border: none;
+    background-color: #36BF36;
+    font-size: large;
+    color: white;
+}
+.list-container {
+    /* top: 0;
+    left: 0; */
+    /* transform: translate(40%,50%); */
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-auto-rows: minmax(50px, auto);
+    row-gap: 10px;
+    /* grid-template-areas: ""; */
+}
+
+.grid-item {
+    border: 2px solid #B8B8B8;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.grid-item-1,
+.grid-item-2,
+.grid-item-3 {
+    color: white;
+    background-color: #0C0CB2;
+}
+
+.grid-item-4 {
+    grid-column: 1/-1;
+    font-weight: lighter;
+}
+
+.grid-item-5,
+.grid-item-6 {
+    text-align: start;
+    padding-left: 10px;
+    color: grey;
+}
+
+.grid-item-7 {
+    color: white;
+    background-color: #36BF36;
+}
+
+.grid-item-8 {
+    grid-column: 1/-1;
+    font-weight: lighter;
+
+
+}
+@media screen and (max-width:900px){
+    .list-container {
+        grid-template-columns: repeat(3, 150px);
+   
+    }
+}
+@media  screen and (max-width:451px) {
+    .list-container {
+        grid-template-columns: repeat(3, 100px);
+        row-gap: 5px;
+
+    }
+
+}
+@media screen and (max-width: 300px) {
+    .list-container {
+        grid-template-columns: repeat(3, 50px);
+        row-gap: 5px;
+        grid-auto-rows: minmax(50px, auto);
+    }
+    
+    .grid-item {
+        font-size: 10px;
+    }
+
+    input::placeholder {
+        font-size: 10px;
+    }
+    
+   
+}
